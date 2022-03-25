@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "public sans",sans-serif;
+    
+}
+/*________________main_________*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 100px;
+    z-index: 9999;
+}
+.nav-links a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: white;
+    position: relative;
+}
+.nav-links a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgb(136, 65%,51%) );
+}
